@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/a13"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.example.text1.Mytext
+        android:id="@+id/tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="@string/text1"
+        android:textColor="#e54404"
+        android:gravity="center_vertical"
+        android:textSize="40sp"
+
+        android:shadowColor="@color/black"
+        android:shadowRadius="3"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        ></com.example.text1.Mytext>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+
+            android:textSize="20dp"
+            android:background="@drawable/btn_selector"
+            >
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <EditText
+            android:id="@+id/et"
+            android:hint="请输入你的名字"
+            android:textColorHint="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="#FF901080"
+            ></EditText>
+
+        <Button
+            android:id="@+id/tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="提交"
+            android:onClick="hand"
+            ></Button>
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/tv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示">
+        </Button>
+        <ProgressBar
+            android:id="@+id/pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ProgressBar>
+        <Button
+            android:id="@+id/tv_four"
+            android:onClick="Seclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐藏"
+            ></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/pro2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="模拟下载"
+            android:onClick="load"
+            ></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送通知"
+            android:onClick="sendNotification"
+            ></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消通知"
+            android:onClick="cacelNotification"
+            ></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/tv_five"
+            android:text="小文对话框"
+            android:onClick="alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/tv_six"
+            android:text="向未来前进"
+            android:onClick="go"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+        </Button>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/tv_seven"
+            android:text="向碎片世界冲冲"
+            android:onClick="gogo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
+
